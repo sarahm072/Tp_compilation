@@ -44,6 +44,7 @@ un langage de programmation C.
       while (isalnum(input[i]))   
       {
         l.lexeme[i] = input[i];
+        i++;
       }
       l.lexeme[i]='\0';
       l.Type=Identificateur;
@@ -66,6 +67,7 @@ un langage de programmation C.
       while (isdigit(input[i]))
       {
          l.lexeme[i] = input[i];
+         i++;
       }
       l.lexeme[i]='\0';
       l.Type=Nombre;
