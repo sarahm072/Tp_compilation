@@ -37,6 +37,7 @@ Lexeme is_identification(char *input){
             //isalnum() verifier si input containt des alphabet ou des nombres.[a-zA-Z0-9]
       {
         l.lexeme[i] = input[i];
+        i++;
       }
       l.lexeme[i]='\0';
       l.Type=Identificateur;
@@ -55,6 +56,7 @@ Lexeme is_number(char *input){
       {
         
         l.lexeme[i] = input[i];
+        i++;
       }
       l.lexeme[i]='\0';
       l.Type=Nombre;
